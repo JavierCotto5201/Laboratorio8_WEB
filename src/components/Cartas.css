@@ -1,0 +1,24 @@
+.carta{
+    width:250px;
+    height: 250px;
+}
+
+.portada{
+    width:250px;
+    height: 250px;
+    background-color: purple;
+}
+
+.contenido{
+    width: 125px;
+    height:125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rebeccapurple;
+}
+
+.ReactFlipCard {
+    width: 100%;
+    height: 100%;
+  }

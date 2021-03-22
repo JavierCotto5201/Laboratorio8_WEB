@@ -1,0 +1,16 @@
+#Header{
+    Color:white;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#titulo{
+    Color:pink;
+}
+
+#intentos{
+    Color:pink;
+}
