@@ -1,17 +1,17 @@
 .carta{
-    width:250px;
-    height: 250px;
+    width:125px;
+    height: 125px;
 }
 
 .portada{
-    width:250px;
-    height: 250px;
+    width:125px;
+    height: 125px;
     background-color: purple;
 }
 
 .contenido{
     width: 125px;
-    height:125px;
+    height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,6 +4,7 @@ import Tablero from "./Tablero";
 import Baraja from "../utils/baraja";
 import "./App.css"; 
 
+var cont = 0;
 const getEstadoInicial = () =>{
   const baraja = Baraja();
   return {
@@ -54,6 +55,10 @@ class StartApp extends React.Component {
       let baraja = this.state.baraja;
 
       if(primer_carta.icono === segunda_carta.icono){
+            cont = cont + 1; 
+            if(cont === 5){
+              alert(`GANASTE EN ${this.state.numIntentos} INTENTOS`);
+            }
         baraja = baraja.map((carta) => {
           if  (carta.icono !== primer_carta.icono){
             return carta;
@@ -64,7 +69,6 @@ class StartApp extends React.Component {
             );
         });
       }
-
       this.ganador(baraja);
       this.setState({
         pareja: [],
@@ -77,7 +81,9 @@ class StartApp extends React.Component {
   }
 
   ganador(baraja){
+    console.log("hola")
     if (baraja.filter((carta) => !carta.acierto).lenght === 0){
+      console.log("hola")
       alert(`GANASTE EN ${this.state.numIntentos} INTENTOS`);
     }
   }

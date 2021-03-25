@@ -25,7 +25,7 @@ export default class Cartas extends React.Component {
                 <Portada handleClick={this.props.seleccionarCarta}>
                     
                 </Portada>
-                <Contenido handleClick={this.props.seleccionarCarta}>
+                <Contenido handleClick={this.props.seleccionarCarta} icono = {this.props.icono}>
 
                 </Contenido>
             </FlipCard>
