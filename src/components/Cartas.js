@@ -6,6 +6,7 @@ import FlipCard from "react-card-flip";
 
 export default class Cartas extends React.Component {
   constructor() {
+    var name = 4
     super();
       this.state = {
       isFlipped: false
@@ -22,14 +23,13 @@ export default class Cartas extends React.Component {
     return (
         <div className="carta">
             <FlipCard isFlipped={this.props.SiendoComp || this.props.acierto} flipDirection="vertical">
-                <Portada handleClick={this.props.seleccionarCarta}>
-                    
-                </Portada>
+              <Portada handleClick={this.props.seleccionarCarta}>    
+              </Portada>
                 <Contenido handleClick={this.props.seleccionarCarta} icono = {this.props.icono}>
 
                 </Contenido>
             </FlipCard>
         </div>
     );
-}
+  }
 }
